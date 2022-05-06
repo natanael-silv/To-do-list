@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-size: 100%;
+  list-style-type: none;
+  background: #38404b;
+  font-family: "Ubuntu", sans-serif;
+  max-height: 100vh;
+}
+h1 {
+  display: none;
+}
+.menu {
+  display: none;
+
+}
+.text {
+  visibility: hidden;
+  font-weight: 400;
+  font-size: 28px;
+  color: #94adcf;
+  grid-column: 1/3;
+}
+.header {
+ 
+  display: flex;
+  margin-top: 7rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 110px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.done {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 129px;
+  row-gap: 52px;
+  margin-bottom: 52px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 129px;
+  row-gap: 52px;
+  margin-bottom: 52px;
+}
+input {
+  font-weight: 400;
+
+  outline: none;
+  border: none;
+  padding-left: 38px;
+}
+input::placeholder {
+  font-size: 16px;
+  color: rgba(148, 173, 207, 0.7);
+  position: absolute;
+  top: 20px;
+  left: 38px;
+}
+.inputwrapper {
+  position: absolute;
+}
+.inputwrapper .arrow {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+}
+#newtask {
+  font-family: "Ubuntu", sans-serif;
+  color: #94adcf;
+  font-size: 16px;
+  font-weight: 400;
+  width: 578px;
+  height: 59px;
+  left: 351px;
+  top: 74px;
+
+  background: #38404b;
+  box-shadow: 1px 1px 2px rgba(66, 75, 88, 0.3),
+    -1px -1px 2px rgba(46, 53, 62, 0.5),
+    inset -3px 3px 6px rgba(46, 53, 62, 0.2),
+    inset 3px -3px 6px rgba(46, 53, 62, 0.2),
+    inset -3px -3px 6px rgba(66, 75, 88, 0.9),
+    inset 3px 3px 8px rgba(46, 53, 62, 0.9);
+  border-radius: 16px;
+}
+.burguer {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  cursor: pointer;
+  position: absolute;
+  right: 87px;
+}
+.burguer span {
+  background: #94adcf;
+  border-radius: 5px;
+  height: 5px;
+  margin-bottom: 7px;
+}
+.burguer span:nth-of-type(1) {
+  transform: translatex(12px);
+  width: 28px;
+}
+
+.burguer span:nth-of-type(2) {
+  width: 100%;
+}
+
+.burguer span:nth-of-type(3) {
+  transform: translatex(12px);
+  width: 28px;
+}
+.task {
+  position: relative;
+  width: 449px;
+  height: 59px;
+  color: #94adcf;
+
+  background: #38404b;
+  box-shadow: -5px 5px 10px rgba(48, 54, 64, 0.2),
+    5px -5px 10px rgba(48, 54, 64, 0.2), -5px -5px 10px rgba(64, 74, 86, 0.9),
+    5px 5px 13px rgba(48, 54, 64, 0.9), inset 1px 1px 2px rgba(64, 74, 86, 0.3),
+    inset -1px -1px 2px rgba(48, 54, 64, 0.5);
+  border-radius: 16px;
+  cursor: pointer;
+}
+.taskcomplete {
+  position: relative;
+  width: 449px;
+  height: 59px;
+
+  color: #94adcf;
+  background: #38404b;
+  box-shadow: 1px 1px 2px rgba(64, 74, 86, 0.3),
+    -1px -1px 2px rgba(48, 54, 64, 0.5),
+    inset -5px 5px 10px rgba(48, 54, 64, 0.2),
+    inset 5px -5px 10px rgba(48, 54, 64, 0.2),
+    inset -5px -5px 10px rgba(64, 74, 86, 0.9),
+    inset 5px 5px 13px rgba(48, 54, 64, 0.9);
+  border-radius: 16px;
+  cursor: pointer;
+}
+.taskcomplete p {
+  text-decoration: line-through;
+}
+.result {
+  font-weight: 500;
+  position: absolute;
+  top: 19px;
+  left: 69px;
+}
+
+.circle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 21px;
+  left: 24px;
+
+  border: 2.5px solid #94adcf;
+  border-radius: 50%;
+}
+.circle2 {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 21px;
+  left: 24px;
+  border-radius: 50%;
+  background: #94adcf;
+}
+
+.plus-btn {
+  display: none;
+}
+.finaline {
+  display: none;
+}
